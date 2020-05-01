@@ -1,0 +1,60 @@
+.Headline {
+  display: flex;
+
+  .headline-logo {
+    width: 50px;
+    height: 65px;
+    flex-basis: 50px;
+    background-image: url("http://www.dpfile.com/app/app-m-module/static/a4af59210e26080ea9403fff6e56e6b1.png");
+    background-position: -86px 18px;
+    background-repeat: no-repeat;
+    background-size: 186px;
+    &::after {
+      background-image: linear-gradient(
+        90deg,
+        #e1e1e1,
+        #e1e1e1 50%,
+        transparent 50%
+      );
+      background-position: top right;
+      background-size: 1px 100%;
+      background-repeat: no-repeat;
+      content: "";
+      display: block;
+      height: 30px;
+      margin-top: 20px;
+    }
+  }
+
+  .headline-carousel {
+    .v-item {
+      height: 65px;
+      line-height: 65px;
+      padding-left: 5px;
+      display: flex;
+      justify-content: space-between;
+      .headline-url-wrapper {
+        width: calc(100% - 75px);
+        height: 100%;
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #111;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .headline-img-wrapper {
+        float: right;
+        img {
+          width: 100px;
+          height: 65px;
+          object-fit: fill;
+        }
+      }
+    }
+  }
+}
